@@ -9,7 +9,7 @@ import random
 
 sides = {
        "edamame" : 104,
-       "wok friend greens" : 111,
+       "wok fried greens" : 111,
        "raw salad" : 105,
        "tori kara age" : 107,
        "chicken wings" : 112,
