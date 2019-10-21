@@ -49,7 +49,7 @@ def get_number(item):
     else:
         return get_all_number(item)
     
-print("enter 0000 to quit")
+print("enter 0 to quit")
 stop = False
 right = 0
 wrong = 0
@@ -57,15 +57,19 @@ mode = input("\nwhat mode would you like to play?\nsides\nmains\ndrinks\ndessert
 while (stop != True):
     item = ask()
     number = input("\nwhat is the number for " + item +"?\n")
-    if number == "0000":
+    if number == "0":
         print("\you got " + str(right) + " correct\n")
         print("\nyou got " + str(wrong) + " incorrect\n")
         print("overall accuracy: " + str(floor((right/(right+wrong))*100)) +"%")
         stop = True
     else:
-        if (answer(int(number), item)):
-            print("\nright, " + item + " is " + str(number) + "\n")
-            right = right + 1
-        else:
-            print("\nwrong, " + item + " is " + get_number(item) + "\n")
-            wrong = wrong + 1
+        try:
+            if (answer(int(number), item)):
+                print("\nright, " + item + " is " + str(number) + "\n")
+                right = right + 1
+            else:
+                print("\nwrong, " + item + " is " + get_number(item) + "\n")
+                wrong = wrong + 1
+        except:
+            print("that's not a number, try again\n")
+            

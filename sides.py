@@ -27,11 +27,11 @@ sides = {
        "prawn gyoza" : 102,
        "duck gyoza" : 99,
        "rice" : 300,
-       "noodes" : 301,
+       "noodles" : 301,
        "kimchi" : 302,
        "tea-stained egg" : 307,
        "chillies" : 303,
-       "pickes" : 304,
+       "pickles" : 304,
        "miso soup" : 109 
        }
 
