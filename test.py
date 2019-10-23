@@ -73,3 +73,4 @@ while (stop != True):
         except:
             print("that's not a number, try again\n")
             
+input("press any key to exit")
